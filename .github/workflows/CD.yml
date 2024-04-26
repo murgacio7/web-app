@@ -37,6 +37,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Clone a repo
+        working-directory: ${{ env.app_name }}
         run: |
           git clone ${{ env.repo }}
 
