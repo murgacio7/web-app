@@ -37,13 +37,13 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Clone a repo
         run: |
-          ls
           git clone https://github.com/akhasa2001/simple-website.git
 
       # Runs a set of commands using the runners shell
       - name: Switch Branches
         working-directory: ${{ env.app_name }}
         run: |
+          ls
           git checkout 3.0.0
           ls -l
 
