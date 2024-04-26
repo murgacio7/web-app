@@ -37,7 +37,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Clone a repo
         run: |
-          cd simple-website
+          ls
           git clone https://github.com/akhasa2001/simple-website.git
 
       # Runs a set of commands using the runners shell
