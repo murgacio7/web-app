@@ -43,7 +43,7 @@ jobs:
       - name: Switch Branches
         working-directory: ${{ env.app_name }}
         run: |
-          git checkout ${{ env.app_version }}
+          git checkout 3.0.0
           ls -l
 
 
