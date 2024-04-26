@@ -6,7 +6,13 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Welcome to ecom E-commerse web application. <h1>V2</h1>'
+    return render_template('index.html')
+
+@app.route('/signup')
+def signup():
+    return render_template('signup.html')
+
+
 
 
 if __name__ == '__main__':
