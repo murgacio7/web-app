@@ -105,3 +105,8 @@ kubectl get all
 ```
 helm uninstall test
 ```
+
+ ## Output should be like this
+ <img width="689" alt="Screenshot 2023-04-01 at 3 17 22 PM" src="https://user-images.githubusercontent.com/80778542/229955711-2ea1ec12-ebcf-4f58-bb1e-edbc0774ea28.png">
+ 
+ <img width="1792" alt="1 0 0" src="https://github.com/akhasa2001/ecom/assets/80778542/b72d27d1-0106-4756-a0bc-6a497b64f937">
