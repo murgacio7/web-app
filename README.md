@@ -16,7 +16,4 @@ https://github.com/akhasa2001/ecom/tree/master
 
  * git chekout 9.0.0
  ```
- ## Output should be like this
- <img width="689" alt="Screenshot 2023-04-01 at 3 17 22 PM" src="https://user-images.githubusercontent.com/80778542/229955711-2ea1ec12-ebcf-4f58-bb1e-edbc0774ea28.png">
- 
- <img width="1792" alt="9 0 0" src="https://github.com/akhasa2001/ecom/assets/80778542/d0fe102f-5eb2-4fd0-9c02-1d01224c814f">
+
