@@ -34,11 +34,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      # # Runs a set of commands using the runners shell
-      # - name: Clone a repo
-      #   working-directory: ${{ env.app_name }}
-      #   run: |
-      #     git clone ${{ env.repo }}
+      # Runs a set of commands using the runners shell
+      - name: Clone a repo
+        run: |
+          git clone https://github.com/akhasa2001/simple-website.git
 
       # Runs a set of commands using the runners shell
       - name: Switch Branches
