@@ -67,7 +67,7 @@ jobs:
 
       # Here, we'll create the service account JSON file from the secret
       - name: Create service account JSON file
-        run: echo "${{ secrets.SERVICE_ACCOUNT_KEY }}" > service-account.json
+        run: echo "${{ secrets.SERVICE_ACCOUNT_KEY }}" | jq '.' > service-account.json
 
       - name: Authenticate to Google account
         run: |
