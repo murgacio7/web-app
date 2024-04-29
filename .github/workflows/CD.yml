@@ -69,15 +69,20 @@ jobs:
       # - name: Create service account JSON file
       #   run: echo "${{ secrets.SERVICE_ACCOUNT_KEY }}" | jq '.' > service-account.json
 
+      - name: Authenticate to Google account
+        run: |
+          # Decode base64 encoded service account key
+          echo "${{ secrets.SERVICE_ACCOUNT_KEY }}" | base64 -d > service-account.json
+
+          gcloud auth activate-service-account --key-file=service-account.json
+          gcloud config set project ${{ env.project_id }}
+
+
       # - name: Authenticate to Google account
       #   run: |
       #     gcloud auth activate-service-account --key-file="service-account.json"
       #     gcloud config set project ${{ env.project_id }}
 
-      - name: Authenticate to Google account
-        run: |
-          # Decode base64 encoded service account key
-          echo "${{ secrets.SERVICE_ACCOUNT_KEY }}" | base64 -d > service-account.json
 
 
       # - name: Authenticate to repository
