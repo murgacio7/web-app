@@ -93,5 +93,5 @@ jobs:
       - name: Image push
         working-directory: ${{ env.app_name }}
         run: |
-          docker push ${{ env.app_name }}:${{ github.event.inputs.app_version }} ${{ env.repo_region }}-docker.pkg.dev/${{ env.project_id }}/${{ env.app_name }}/${{ env.app_name }}:${{ github.event.inputs.app_version }}
+          docker push ${{ env.repo_region }}-docker.pkg.dev/${{ env.project_id }}/${{ env.app_name }}/${{ env.app_name }}:${{ github.event.inputs.app_version }}
 
