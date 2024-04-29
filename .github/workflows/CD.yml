@@ -3,6 +3,7 @@ env:
   project_id:   "terraform-project-akhasa1"
   repo_region:  "us-central1"
   app_name:     "simple-website"
+  registry_name: "docker-registry"
 
 
 
@@ -93,5 +94,5 @@ jobs:
       - name: Image push
         working-directory: ${{ env.app_name }}
         run: |
-          docker push ${{ env.repo_region }}-docker.pkg.dev/${{ env.project_id }}/${{ env.app_name }}/${{ env.app_name }}:${{ github.event.inputs.app_version }}
+          docker push ${{ env.repo_region }}-docker.pkg.dev/${{ env.project_id }}/${{ env.registry_name }}/${{ env.app_name }}:${{ github.event.inputs.app_version }}
 
