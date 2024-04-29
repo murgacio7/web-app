@@ -2,7 +2,7 @@ env:
   repo:         "https://github.com/akhasa2001/simple-website.git"
   project_id:   "terraform-project-akhasa1"
   repo_region:  "us-central1"
-  app_name:     "ecom"
+  app_name:     "simple-website"
 
 
 
@@ -43,7 +43,7 @@ jobs:
       - name: Switch Branches
         working-directory: ${{ env.app_name }}
         run: |
-          git checkout ${{ env.app_version }}
+          git checkout 3.0.0
 
 
 
